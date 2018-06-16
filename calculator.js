@@ -37,11 +37,11 @@ var calculatorModule = (function() {
    * Return the value of `total`
    * @return { Number }
    */
-  function getTotal() {
+  function getTotal() { //getTotal: getTotal
     return total
  }
 
- function resetTotal() {
+ function resetTotal() { //resetTotal: resetTotal
     total = 0;
  }
 
@@ -51,7 +51,7 @@ var calculatorModule = (function() {
    */
   function add(x) {
     validate(x)
-    total += x
+    total += x //+
   }
 
   /**
@@ -60,7 +60,7 @@ var calculatorModule = (function() {
    */
   function subtract(x) {
     validate(x)
-    total -= x
+    total -= x //-
   }
 
   /**
@@ -69,7 +69,7 @@ var calculatorModule = (function() {
    */
   function multiply(x) {
     validate(x)
-    total *= x
+    total *= x //*
   } 
 
   /**
@@ -78,28 +78,28 @@ var calculatorModule = (function() {
    */
   function divide(x) {
     validate(x)
-    total /= x
+    total /= x // /
   }
 
   /**
    * Return the value stored at `memory`
    * @return { Number }
    */
-  function recallMemory() {
+  function recallMemory() { //recallMemory: recallMemory
     return memory
   }
 
   /**
    * Stores the value of `total` to `memory`
    */
-  function saveMemory() {
+  function saveMemory() { //saveMemory: saveMemory
     memory = total
   }
 
   /**
    * Clear the value stored at `memory`
    */
-  function clearMemory() {
+  function clearMemory() { //clearMemory: clearMemory
     memory = 0
   }
   /**
